@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Text to speech converter in JS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3 align="center">
+        Omar Foda<br />
+        Class 7
+      </h3>
+      <textarea id="myText">
+Write what u want here and the browser will say it</textarea
+      >
+      <label>
+        <span>Voice</span>
+        <select id="voiceOptions"></select>
+      </label>
+      <label>
+        <span>Volume</span>
+        <input
+          type="range"
+          id="volumeSlider"
+          min="0"
+          max="5"
+          value="0.5"
+          step="0.1"
+        />
+      </label>
+      <label>
+        <span>rate</span>
+        <input
+          type="range"
+          id="rateSlider"
+          min="0"
+          max="5"
+          value="0.5"
+          step="0.1"
+        />
+      </label>
+      <div class="button" onclick="speak();">Speak</div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
